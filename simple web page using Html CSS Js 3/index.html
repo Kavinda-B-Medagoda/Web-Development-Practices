@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="./images/logo.png" alt="" class="logo">
+            <div class="header-text">
+                <h1>The Purpose is to <br> teach, bring learning to people</h1>
+                <span class="squre"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Unde fugiat cumque reprehenderit voluptate assumenda architecto impedit maiores.
+                     Voluptatum corporis velit voluptate labore! In, deleniti architecto.
+                </p>
+                <button class="com-button">Read more</button>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+        </ul>
+    </nav>
+    <img src="./images/menu.png" id="menu_btn" alt="">
+
+    <script>
+        var menu_btn = document.getElementById("menu_btn")
+        var sidenav = document.getElementById("sidenav")
+
+        sidenav.style.right = "-250px";
+        menu_btn.onclick = function()
+        {
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0px";
+            }
+            else{
+                sidenav.style.right = "-250px";
+            }
+        }
+    </script>
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="./images/about.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="squre"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos maiores ab iure! Quaerat libero, esse accusamus blanditiis recusandae sed. Expedita quis, repellat nobis inventore nihil minima alias corporis nisi, ut deleniti nulla?</p>
+                <br><br>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+                <h2>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis enim quidem tempore aspernatur voluptates quae facere minima impedit eligendi!"</h2>
+                <h3>---Kavinda Medagoda</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="./images/pic-1.png" alt="">
+                <h4>Learn anyware</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laudantium?</p>
+            </div>
+            <div class="feature-col">
+                <img src="./images/pic-2.png" alt="">
+                <h4>Expert teachers</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laudantium?</p>
+            </div>
+            <div class="feature-col">
+                <img src="./images/pic-3.png" alt="">
+                <h4>Unlimited access</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laudantium?</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <button class="com-button">Start Free Trial</button>   
+        </div>
+    </section>
+
+
+    <!-- Contacts -->
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to Join Our <br> learning commiunity</h1>
+                <form action="">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter email">
+                    <input type="password" placeholder="Enter password">
+                    <div class="btn-box">
+                        <button class="com-button">Sign Up</button>   
+                        <button class="com-button">Start Free Trial</button> 
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right-col">
+                <img src="./images/contact.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- social icons -->
+
+    <div class="social-icons">
+        <img src="./images/facebook.png" alt="">
+        <img src="./images/instagram.png" alt="">
+        <img src="./images/twitter.png" alt="">
+        <img src="./images/linkedin.png" alt="">
+    </div>
+
+</body>
+</html>
